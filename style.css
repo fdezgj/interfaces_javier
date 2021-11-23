@@ -1,0 +1,218 @@
+html{
+    background: url("IMG/fondo_pagina.jpg") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+}
+body{
+    height: 100%;
+
+}
+#cabecera{
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height: auto;
+}
+
+#botones{
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    color: red;
+
+    
+}
+
+#botones > div{
+    border: 1px dashed blue;
+    font-family:fantasy;
+    font-weight: bolder;
+}
+
+#cuerpo{
+    height: 80%;  
+}
+#contenedor{
+    display: flex;
+    flex-flow: column wrap;
+    height: 100%;
+    align-content: center;
+    justify-content: space-around;
+    margin: 0.5em;
+    margin-bottom: 2em;
+    text-align: center;
+    
+}
+#contenedor > div{
+    font-size: x-large;
+    color: whitesmoke;
+}
+
+#t1{
+    font-family:fantasy;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+#maps{
+    width: 2.5em;
+    height: 2.5em;
+    background: url(IMG/maps.png) no-repeat center center;
+    background-size: contain;
+    border-radius: 0.625em;
+    align-self: center;
+}
+
+#imagenes{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#imagenes > div{
+    width: 2.5em;
+    height: 2.5em;
+}
+
+#instagram{
+    
+    background: url(IMG/instagram.png) no-repeat center center;
+    background-size: contain;
+    border-radius: 0.625em;
+}
+#facebook{
+   
+    background: url(IMG/facebook.png) no-repeat center center;
+    background-size: contain;
+    border-radius: 0.625em;
+    
+}
+#twiter{
+   
+    background: url(IMG/twitter.png) no-repeat center center;
+    background-size: contain;
+    border-radius: 0.625em;
+}
+
+footer{
+    bottom: 0;
+    position:fixed;
+    text-align: center;
+    font-size: small;
+    background-color: black;
+    color: whitesmoke;
+    width: 100%;
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+
+
+    #botones{
+        flex-flow: row wrap;
+        width: 100%;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        color: red;
+        
+    }
+
+    #botones > div{
+        font-size: x-large;
+        width: 20%;
+    }
+
+
+    #contenedor{
+        align-content: flex-start;
+        width: auto;
+        justify-content: center;
+     
+    }
+
+    #contenedor > div{
+        margin: 0.5em;
+    }
+
+    #imagenes > div{
+        width: 2em;
+        height: 2em;
+    }
+
+    #maps{
+        width: 2.5em;
+        height: 2.5em;
+    }
+
+    footer{
+       
+        width: 100%;
+        
+    }
+
+    footer > div{
+        width: 100%;
+        text-align: center;
+        font-size:1.5em;
+    }
+}
+
+@media (min-width: 1024px){
+
+    #botones{
+        flex-flow: row nowrap;
+        width: 100%;
+       
+        text-align: center;
+        color: red;   
+        margin-left: 5em;  
+    }
+    .boton{
+        flex-basis: 20%;
+        flex-grow: 1;
+        height: 50%;
+        padding-top: 1.2em;
+        padding-bottom: 0em;
+    }
+    #botonPequenoIzq, #botonPequenoDer{
+        flex-basis: 15%;
+        flex-grow: 0;
+        
+        padding-top: 0.7em;
+        height: 40%;
+       
+    }
+    #botones > div{
+        font-size: x-large;
+        padding-bottom: 0;
+        
+    }
+
+    #contenedor{
+       
+        align-content: flex-end;
+        margin-right: 10em;
+        width: auto;
+        justify-content: space-evenly;
+         
+    }
+
+   
+
+    footer{
+       
+        width: 100%;
+        
+    }
+
+    footer > div{
+        width: 100%;
+        text-align: center;
+        font-size:1.7em;
+    }
+    
+}
